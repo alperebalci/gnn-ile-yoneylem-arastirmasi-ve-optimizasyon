@@ -1049,3 +1049,7 @@ Bu karar;
 olabilir.
 
 GNN'lerin yöneylem araştırmasındaki en güçlü kullanım alanı, klasik optimizasyon teorisini ortadan kaldırmak değil; **öğrenilmiş heuristics ile klasik algoritmaları güçlendirmektir.**
+
+## Notebook bütünlüğü için CI
+
+[Notebook CI kontrolü](.github/workflows/teaching-assets.yml), Jupyter notebook JSON yapısını ve kod hücresi varlığını doğrular; `ornekler/` altındaki Python dosyalarının söz dizimini Python 3.11 ve 3.12'de denetler. **Bu kontrol GNN eğitimi, PyTorch/PyG doğruluğu veya SCIP çözücü performansını test etmez.** Bunlar için bağımsız kurulum ve deneysel testler gereklidir.
